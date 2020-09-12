@@ -410,10 +410,10 @@ static void FinalizeSamplesAudioCallback(void *)
             BOOL rightPressed = dpad.right.pressed || axisDirection == PVControllerAxisDirectionRight || axisDirection == PVControllerAxisDirectionUpRight || axisDirection == PVControllerAxisDirectionDownRight;
             S9xReportButton(playerMask | PVSNESButtonRight, rightPressed);
 
-            S9xReportButton(playerMask | PVSNESButtonB, pad.buttonA.pressed);
-            S9xReportButton(playerMask | PVSNESButtonA, pad.buttonB.pressed);
-            S9xReportButton(playerMask | PVSNESButtonY, pad.buttonX.pressed);
-            S9xReportButton(playerMask | PVSNESButtonX, pad.buttonY.pressed);
+            S9xReportButton(playerMask | PVSNESButtonA, pad.buttonA.pressed);
+            S9xReportButton(playerMask | PVSNESButtonB, pad.buttonB.pressed);
+            S9xReportButton(playerMask | PVSNESButtonX, pad.buttonX.pressed);
+            S9xReportButton(playerMask | PVSNESButtonY, pad.buttonY.pressed);
 
             S9xReportButton(playerMask | PVSNESButtonTriggerLeft, pad.leftShoulder.pressed);
             S9xReportButton(playerMask | PVSNESButtonTriggerRight, pad.rightShoulder.pressed);

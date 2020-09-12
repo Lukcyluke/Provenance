@@ -301,8 +301,8 @@ bool systemReadJoypads()
                 (gamepad.dpad.left.isPressed || gamepad.leftThumbstick.left.isPressed) ? pad[playerIndex] |= KEY_LEFT : pad[playerIndex] &= ~KEY_LEFT;
                 (gamepad.dpad.right.isPressed || gamepad.leftThumbstick.right.isPressed) ? pad[playerIndex] |= KEY_RIGHT : pad[playerIndex] &= ~KEY_RIGHT;
 
-                gamepad.buttonA.isPressed ? pad[playerIndex] |= KEY_BUTTON_B : pad[playerIndex] &= ~KEY_BUTTON_B;
-                gamepad.buttonB.isPressed ? pad[playerIndex] |= KEY_BUTTON_A : pad[playerIndex] &= ~KEY_BUTTON_A;
+                gamepad.buttonB.isPressed ? pad[playerIndex] |= KEY_BUTTON_B : pad[playerIndex] &= ~KEY_BUTTON_B;
+                gamepad.buttonA.isPressed ? pad[playerIndex] |= KEY_BUTTON_A : pad[playerIndex] &= ~KEY_BUTTON_A;
 
                 gamepad.leftShoulder.isPressed ? pad[playerIndex] |= KEY_BUTTON_L : pad[playerIndex] &= ~KEY_BUTTON_L;
                 gamepad.rightShoulder.isPressed ? pad[playerIndex] |= KEY_BUTTON_R : pad[playerIndex] &= ~KEY_BUTTON_R;
